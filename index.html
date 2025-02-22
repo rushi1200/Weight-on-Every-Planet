@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="index.css">
+</head> 
+<body>
+
+    <div class="header">
+        
+        <h1>Write your weight here</h1>
+        <div class="input1">
+            <input  type="number" placeholder="Enter your weight" name="weight" id="weight">
+            <button   style="border: 1px solid black;" onclick="findwt()">Submit</button>
+        </div>
+        
+    </div>
+
+  <div class="container">
+    <div class="planet" id="sp1" ><h6>Merqury</h6></div>
+    <div class="planet" id="sp2" ><h6>Venus</h6></div>
+    <div class="planet" id="sp3" ><h6>Mars</h6></div>
+ 
+    <div class="planet" id="sp4" ><h6>Moon</h6></div>
+    <div class="planet" id="sp5" ><h6>Jupiter</h6></div>
+    <div class="planet" id="sp6" ><h6>Uranus</h6></div>
+  
+    <div class="planet" id="sp7" ><h6>Neptune</h6></div>
+    <div class="planet" id="sp8" ><h6>Pluto</h6></div>
+    <div class="planet" id="sp9" ><h6>Saturn</h6></div>
+    </div>
+
+<script>
+
+    function findwt(){
+
+        var w = document.getElementById("weight").value;
+
+        var mar=w*0.38;
+        mar = mar.toFixed(1)
+        document.getElementById("sp1").innerText = `\nMercury wt= ${mar} `;
+        
+        var ven = w*0.91;
+        ven = ven.toFixed(1)
+        document.getElementById("sp2").innerText = ` \n Venus wt =${ven}`;
+
+        var mass = w*0.38;
+        mass = mass.toFixed(1)
+        document.getElementById("sp3").innerText = `\n Mars wt =${mass}`;
+
+        var moon=w*0.166;
+        moon = moon.toFixed(1)
+        document.getElementById("sp4").innerText = `\nMoon wt = ${moon} `;
+        
+        var jupiter = w*2.34;
+        jupiter = jupiter.toFixed(1)
+        document.getElementById("sp5").innerText = ` \nJupiter wt =${jupiter}`;
+
+        var uranus = w*0.92;
+        uranus = uranus.toFixed(1)
+        document.getElementById("sp6").innerText = `\n Uranus wt =${uranus}`;
+
+        var neptune = w*1.19;
+        neptune = neptune.toFixed(1)
+        document.getElementById("sp7").innerText = ` \n Neptune wt =${neptune}`;
+
+        var pluto = w*0.06;
+        pluto = pluto.toFixed(1)
+        document.getElementById("sp8").innerText = `\n Pluto wt =${pluto}`;
+
+        var saturn = w*1.06;
+        saturn = saturn.toFixed(1)
+        document.getElementById("sp9").innerText = `\n Saturn wt =${saturn}`;
+       
+    }
+
+</script>
+
+</body>
+</html>
